@@ -13,9 +13,9 @@ public class UpadateDemo {
 	
 	public static void main(String[] args) {
 		
-		//Connection con=null;
 		
-		String sql="UPDATE STUDENT_INFO WHERE MARKS>80";
+		
+		String sql="UPDATE STUDENT_INFO WHERE SET NAME='RUHI' WHERE ROLL_NO =10";
 		
 		try(Connection con1=DriverManager.getConnection(DB_URL,USER,PASS);
 	    Statement stmt=con1.createStatement();)		
